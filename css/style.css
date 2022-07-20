@@ -1,0 +1,288 @@
+/* селекторы *
+/* универсальный *
+тега - p
+кнопки и teg adress не унаследуют шрифт надо вручную
+id  используетс ядля ссылки в тесте при нажатии перекинут на то место где это необходимо ЕГО не используем - # text
+
+клас (. css) (class - html) самі популярній но проблема вибирать название класса
+h1,h2,h3 - title
+p - text
+nav - navigatia
+list- список ul
+item - єлемент списка li
+link - ссылка
+атрибут
+[href] все ссілки відялятся в той цвет которій зададим
+[href] {
+  color: aqua; }
+дочерний .team > p {
+  color: rgb(172, 239, 16); }
+потомка 
+.team  p {
+  color: rgb(172, 239, 16); }
+*/
+html {
+  box-sizing: border-box;
+}
+*.,*::before,*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+background: #ffffff;
+}
+
+/* heder */
+.header {
+  background-color: #2F303A;
+  
+}
+/* Логотип */
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+background-color: rgb(191, 27, 27);
+/* margin-bottom: 0; */
+margin:0 auto;
+}
+
+.span-logo {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;
+}
+
+.logo {
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.span-logo, .logo {
+text-decoration: none;
+}
+.logo:hover {
+  
+}
+/* header ссылки */
+.header-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+cursor: pointer;
+color: #212121;
+text-decoration: none;
+}
+/* header емеил и тел */
+.header-mail,
+.header-tel, {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+text-decoration: none;
+cursor: pointer;
+}
+.header-link:hover, 
+.header-link:focus {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+.header-mail:hover, 
+.header-tel:hover {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+
+/* Скидівание точекв в li */
+.list {
+list-style: none;
+}
+/* Герой */
+.hero-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #ffffff;
+margin: 0;
+}
+.hero {
+background: #2f303a;
+}
+.hero-but {
+border-radius: 4px;
+padding: 10px 32px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #ffffff;
+background: #2196f3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+cursor: pointer;
+margin: 0 auto;
+}
+.hero-but:hover {
+  color: #2196F3;
+  background-color: #FFFFFF;
+}
+
+
+/* Шапка сайта */
+.Benefits-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+/* Шапка сайта */
+.Benefits-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* Чем мы занимаемся */
+.work-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+/* Наша команда */
+.team {
+background: #F5F4FA;
+}
+.team-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.team-title-name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.team-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* Подвал */
+.footer {
+background: #2F303A;
+}
+.span-studio {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+.adres-text {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+text-decoration: none;
+}
+.footer-link {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+text-decoration: none;
+}
+.adres-text:hover {
+  color: #2196F3;
+}
+
+/* portfolio */
+.list-nav__btn {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+background-color:  #F5F4FA;
+color: #212121;
+cursor: pointer;
+}
+.list-nav__btn:hover, 
+.list-nav__btn:focus {
+background-color:  #2196F3;
+color: #ffffff;
+}
+/* портфолио */
+.portfolio-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: #212121;
+}
+.portfolio-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/
