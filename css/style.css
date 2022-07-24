@@ -51,7 +51,7 @@ list-style: none;
 .container-nav {
   display: flex;
   align-items: center;
-  margin-bottom: 95px;
+  /* margin-bottom: 95px; */
 }
 
 /* Логотип */
@@ -335,13 +335,16 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 /* портфолио */
+
+
 .list-nav {
 display: flex;
 justify-content: center;
 margin-bottom: 50px; 
+padding-top: 95px;
 }
 
-.potf-non {
+.portf-non {
   display: none;
 }
 
