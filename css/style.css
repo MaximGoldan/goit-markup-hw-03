@@ -294,7 +294,7 @@ address {
 .team {
   background: #f5f4fa;
   padding-bottom: 95px;
-  padding-top: ;
+  padding-top: 95px;
 }
 
 .team-title {
@@ -337,21 +337,73 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   /* margin-bottom: 30px; */
 }
 .team-soc {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-top: 16px;
+  margin-bottom: 30px;
 }
+
 .item-soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: cadetblue;
-  display: block;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: #afb1b8;
 }
+.item-soc-link:hover,
+.item-soc-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+/* <!-- постоянные клиенты --> */
+.clients {
+  background: #ffffff;
+  padding-bottom: 95px;
+  padding-top: 95px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.clients-item {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  fill: #afb1b8;
+}
+.clients-link:hover,
+.clients-link:focus {
+  fill: #2196f3;
+}
+
 /* Подвал */
 .footer {
   background: #2f303a;
@@ -400,6 +452,43 @@ address {
 .adres-gps:hover,
 .adres-text:hover {
   color: #2196f3;
+}
+/* присоиденяйтесь */
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0, 87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: 1px solid #ededed;
+}
+.join-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+}
+.join-item {
+}
+.join-soc-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ededed;
+  fill: #afb1b8;
+}
+.join-soc-link:hover,
+.join-soc-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
 }
 
 /* портфолио */

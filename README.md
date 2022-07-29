@@ -56,3 +56,46 @@ margin-right: 0;
 .portfolio-item:nth-last-child(-n + 3) {
 margin-bottom: 95px;
 }
+
+<!-- ---изменение цвета с помощью currentColor--- -->
+
+.item-soc-link {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: rgb(181, 232, 233);
+/_ background-color: #ffffff; _/
+display: flex;
+align-items: center;
+justify-content: center;
+color: #afb1b8; - цвет задали для унаследования
+}
+**\_\_**унаследование при каждом изменении ывета\_\_\_\_
+.item-soc-icon {
+fill: currentColor;
+}
+
+.item-soc-link:hover,
+.item-soc-link:focus {
+background-color: #2196f3;
+color: #ffffff;
+}
+/\* .item-soc-icon {
+fill: currentColor;
+}
+
+.item-soc-link:hover,
+.item-soc-link:focus {
+background-color: #2196f3;
+color: #ffffff;
+} _/
+/_ .item-soc-icon {
+fill: #afb1b8;
+} _/
+/_ .item-soc-link:hover,
+.item-soc-link:focus {
+background-color: #2196f3;
+} _/
+/_ .item-soc-link:hover .item-soc-icon {
+fill: #ffffff;
+} \*/
